@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>API Project</title>
+	<link rel="stylesheet" href="stylesheet.css" />
+	<link href='http://fonts.googleapis.com/css?family=Nunito:400,300' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="ion.rangeSlider.css">
+	<link rel="stylesheet" href="ion.rangeSlider.skinHTML5.css">
+</head>
+<body>
+
+<header>
+	<div class="logo">
+		<img src="images/vinology-app-logo.svg" alt="">
+	</div>
+	<div class="description">
+		<h3>Picking a random wine at the LCBO just got a whole lot easier.</h3>
+	</div>
+</header>
+
+<div class="app ">
+	<div class="app-container clearfix">
+		<form class="search">
+			<h4>Select a type</h4>
+			<div class="wine-type">
+				<select name="" id="winetype">
+					<option value="Red">Red</option>
+					<option value="White">White</option>
+					<option value="Rose">Rosé</option>
+					<option value="Sparkling">Sparkling</option>
+				</select>
+			</div>
+		
+			<div class="slider">
+				<h4>Price Range</h4>
+				<input type="text" class="price" id="priceSlider" name="example_name" value="" />
+			</div>
+			<div class="keywords">
+				<h4>Keywords</h4>
+				<input type="text" name="keywords" val="">
+			</div>
+			<div class="submit">
+				<input type="submit" value="Show Me Some Wine">
+			</div>
+		</form>
+	</div>	
+</div> <!-- end of app form -->
+
+<div class="results clearfix" id="wineselection">	
+	  <div class="showWine"></div>
+</div>
+
+<div class="footer">
+	<p><img src="images/lcbo-storefront.svg" alt=""></p>
+	<p> © 2015 Designed + Developed by <a href="http://www.creativecocktail.ca">Sarah Hunter</a></p>
+</div>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="ion.rangeSlider.min.js"></script>
+<script src="javascript.js"></script>
+	
+</body>
+</html>
